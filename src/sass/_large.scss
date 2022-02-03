@@ -43,13 +43,21 @@
         }
     }
 
+    .about {
+        padding: 8em 1.5em;
+    }
+
     .offer {
+        padding: 8em 1.5em;
+
         &__item {
             padding: 3em;
         }
     }
 
     .portfolio {
+        padding: 8em 1.5em;
+
         &__item {
             flex-direction: row;
 
@@ -62,6 +70,10 @@
                 max-width: 500px;
             }
         }
+    }
+
+    .form {
+        padding: 8em 1.5em;
     }
 
     .error {

@@ -103,7 +103,7 @@ section:nth-child(even) {
 		position: fixed;
 		top: 0;
 		background-color: $white;
-		box-shadow: 0 0 8px $white-smoke;
+		box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 		animation: nav-animation 0.5s;
 	}
 
@@ -247,7 +247,7 @@ section:nth-child(even) {
 // MAIN
 // ABOUT
 .about {
-	padding: 9em 1.5em;
+	padding: 5em 1.5em;
 
 	&__list {
 		list-style: none;
@@ -266,13 +266,17 @@ section:nth-child(even) {
 
 // OFFER
 .offer {
-	padding: 8em 1.5em;
+	padding: 5em 1.5em;
 
 	&__item {
 		margin: 4em 0;
 		padding: 1.5em 1.5em 2em;
 		background-color: $white-smoke;
 		border-radius: 8px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
 
 		&-title {
 			font-size: 2.4rem;
@@ -320,7 +324,7 @@ section:nth-child(even) {
 
 // PORTFOLIO
 .portfolio {
-	padding: 8em 1.5em;
+	padding: 5em 1.5em;
 
 	&__item {
 		display: flex;
@@ -367,49 +371,9 @@ section:nth-child(even) {
 }
 
 // CONTACT
-.team {
-	padding: 8em 1.5em;
-
-	&__title {
-		font-size: 3.6rem;
-	}
-
-	&__text {
-		margin: 1em 0;
-	}
-
-	&__item-box {
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
-		margin: 4em 0;
-	}
-
-	&__item {
-		padding: 1.5em;
-		width: 100%;
-		max-width: 350px;
-		background-color: $white-smoke;
-		border-radius: 8px;
-
-		&-text {
-			margin: .5em 0;
-		}
-
-		&-link {
-			color: $black;
-			text-decoration: none;
-
-			&:hover {
-				text-decoration: underline;
-			}
-		}
-	}
-}
-
 .form {
 	margin-bottom: 156px;
-	padding: 8em 1.5em;
+	padding: 4em 1.5em;
 
 	&__title {
 		margin-bottom: 0.5em;
@@ -441,6 +405,8 @@ section:nth-child(even) {
 		width: 100%;
 		min-width: 100%;
 		max-width: 100%;
+		min-height: 50px;
+		max-height: 200px;
 		font-size: 1.6rem;
 		background-color: $white-smoke;
 		border: none;
