@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mielechdev</title>
+    <link rel="shortcut icon" href="./dist/img/mielech-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/css/main.min.css">
+    <script src="https://kit.fontawesome.com/5d4835d853.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="shadow"></div>
+
+    <nav class="nav">
+    <div class="navbar wrapper">
+        <a href="index.html" class="navbar__brand">mielech<span>dev</span></a>
+        <button class="hamburger hamburger--spin" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <div class="navbar__mobile">
+            <a href="index.html#offer" class="navbar__item">Oferta</a>
+            <a href="index.html#portfolio" class="navbar__item">Realizacje</a>
+            <a href="contact.html" class="navbar__item">Kontakt</a>
+        </div>
+        <div class="navbar__desktop">
+            <a href="index.html#offer" class="navbar__item">Oferta</a>
+            <a href="index.html#portfolio" class="navbar__item">Realizacje</a>
+            <a href="contact.html" class="navbar__item">Kontakt</a>
+        </div>
+        <div class="shadow"></div>
+    </div>
+</nav>
+
+    <header class="header header--contact">
+        <div class="header__shadow"></div>
+        <div class="header__box wrapper">
+            <div class="header__text-box">
+                <h2 class="header__title">Skontaktuj się z nami</h2>
+                <p class="header__text">Skorzystaj z formularza kontaktowego aby się z nami skontaktować.</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="form">
+            <div class="form__box wrapper">
+                <h3 class="form__title">Formularz kontaktowy</h3>
+                <form id="form__contact-form" action="https://formsubmit.io/send/97f89b71-36b0-4e7e-94b3-fca5c26af74c"
+                    method="POST">
+                    <!-- <input name="_redirect" type="hidden" id="name" value=""> -->
+
+                    <input name="name" type="text" id="name" placeholder="Podaj swoję imię" class="form__input">
+                    <input name="email" type="email" id="email" placeholder="Podaj swój adres email"
+                        class="form__input">
+                    <textarea name="comment" id="comment" rows="3" placeholder="Wpisz swoją wiadomość"
+                        class="form__textarea"></textarea>
+
+                    <input name="_formsubmit_id" type="text" style="display:none">
+
+                    <input value="Zatwierdź" type="submit" class="form__btn">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+    <div class="footer__box wrapper">
+        <p class="footer__bottom-text">&copy; <span class="footer__year"></span> | mielechdev</p>
+    </div>
+</footer>
+
+    <a href="#" class="scroll-to-top-btn"><i class="fas fa-chevron-up"></i></a>
+
+    <script src="./dist/js/main.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+@media (min-width: 992px) {
+
+    .hamburger {
+        display: none;
+    }
+
+    .navbar {
+        &__mobile {
+            display: none;
+        }
+
+        &__desktop {
+            display: block;
+        }
+
+        &__item {
+            margin: 0 .5em;
+            padding: 1em;
+            color: $white;
+            font-weight: bold;
+            transition: color .3s;
+
+            &:hover {
+                color: $secondary;
+                background: none;
+            }
+        }
+    }
+
+    .header {
+        background-image: url('../img/header-img-big.jpg');
+
+        &__title {
+            font-size: 4.8rem;
+        }
+
+        &__text {
+            font-size: 1.6rem;
+        }
+
+        &__btn {
+            font-size: 1.7rem;
+        }
+    }
+
+    .offer {
+        &__item {
+            padding: 3em;
+        }
+    }
+
+    .portfolio {
+        &__item {
+            flex-direction: row;
+
+            &-text-box {
+                order: 0;
+                max-width: 500px;
+            }
+
+            &-img {
+                max-width: 500px;
+            }
+        }
+    }
+
+    .error {
+        &__title {
+            font-size: 4.8rem;
+        }
+
+        &__btn {
+            margin-top: 1.5em;
+            padding: 1em 2em;
+        }
+    }
+}
