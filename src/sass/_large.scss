@@ -45,6 +45,10 @@
 
     .about {
         padding: 8em 1.5em;
+
+        &__list {
+            padding-top: 0.5em;
+        }
     }
 
     .offer {
@@ -84,6 +88,18 @@
         &__btn {
             margin-top: 1.5em;
             padding: 1em 2em;
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    .footer {
+        &__box {
+            flex-direction: row;
+        }
+
+        &__links {
+            order: 3;
         }
     }
 }

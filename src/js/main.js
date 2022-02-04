@@ -27,7 +27,7 @@ const handleScrollBar = () => {
         nav.classList.remove('nav--active')
     }
 
-    if(scrollBarWidth > 92) {
+    if(scrollBarWidth > 95) {
         scrollToTopBtn.classList.add('scroll-to-top-btn--active')
     } else {
         scrollToTopBtn.classList.remove('scroll-to-top-btn--active')
