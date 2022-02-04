@@ -428,10 +428,11 @@ section:nth-child(even) {
 		border: none;
 		border-radius: 30px;
 		cursor: pointer;
-		transition: background-color 0.3s;
+		transition: background-color 0.3s, box-shadow 0.3s;
 
 		&:hover {
 			background-color: $secondary-dark;
+			box-shadow: -2px 3px 5px rgba(0, 0, 0, 0.2);
 		}
 	}
 }
@@ -460,10 +461,11 @@ section:nth-child(even) {
 		background-color: $secondary;
 		text-decoration: none;
 		border-radius: 30px;
-		transition: background-color .3s;
+		transition: background-color 0.3s, box-shadow 0.3s;
 
 		&:hover {
 			background-color: $secondary-dark;
+			box-shadow: -2px 3px 5px rgba(0, 0, 0, 0.2);
 		}
 	}
 }
