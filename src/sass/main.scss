@@ -75,7 +75,7 @@ body {
 	color: $black;
 	border-radius: 50%;
 	font-size: 3rem;
-	transition: color 0.3s;
+	transition: transform 0.3s;
 
 	&--active {
 		display: block;
@@ -83,7 +83,7 @@ body {
 	}
 
 	&:hover {
-		color: $secondary;
+		transform: scale(.9);
 	}
 }
 
@@ -258,9 +258,38 @@ section:nth-child(even) {
 		position: relative;
 		margin: 1em 0;
 		line-height: 150%;
+
+		&-link {
+			position: relative;
+			text-decoration: none;
+			color: $black;
+			font-weight: bold;
+			transition: color .3s;
+			cursor: pointer;
+
+			&::before {
+				content: '';
+				position: absolute;
+				bottom: -5px;
+				left: -2.5%;
+				height: 2px;
+				width: 105%;
+				background-color: $secondary;
+				transition: height .3s;
+				z-index: -1;
+			}
+
+			&:hover {
+				color: $white;
+			}
+
+			&:hover::before {
+				height: 140%;
+			}
+		}
 	}
 
-	&__item span {
+	&__item .fas {
 		color: $secondary;
 	}
 }

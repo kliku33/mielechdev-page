@@ -13,17 +13,44 @@
             display: block;
         }
 
+        &__item,
+		&__item::after,
+		&__item::before {
+			transition: width 0.3s;
+		}
+
         &__item {
+            position: relative;
             margin: 0 .5em;
-            padding: 1em;
+            padding: .5em 1em;
             color: $white;
             font-weight: bold;
-            transition: color .3s;
+
+            &::before,
+			&::after {
+				content: '';
+				position: absolute;
+				width: 0;
+				bottom: 0;
+				border-bottom: 2px solid $white;
+			}
+
+			&::before {
+				right: 50%;
+			}
+
+			&::after {
+				left: 50%;
+			}
 
             &:hover {
-                color: $secondary;
-                background: none;
+                background-color: transparent;
             }
+
+			&:hover::before,
+			&:hover::after {
+				width: 40%;
+			}
         }
     }
 
