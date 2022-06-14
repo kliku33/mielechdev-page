@@ -1,5 +1,9 @@
 @media (min-width: 992px) {
 
+    .scroll-to-top-btn {
+        bottom: 2px;
+    }
+
     .hamburger {
         display: none;
     }
@@ -78,11 +82,28 @@
         }
     }
 
+    .skills {
+        background-image: url('../img/header-img-big.jpg');
+
+        &__box {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
     .offer {
         padding: 8em 1.5em;
 
         &__item {
             padding: 3em;
+        }
+    }
+
+    .help {
+        background-image: url('../img/header-img-big.jpg');
+
+        &__text {
+            padding: 3em 5em;
         }
     }
 
@@ -101,6 +122,10 @@
                 max-width: 500px;
             }
         }
+
+        &__item:nth-child(even) {
+            flex-direction: row-reverse;
+        }
     }
 
     .form {
@@ -115,6 +140,35 @@
         &__btn {
             margin-top: 1.5em;
             padding: 1em 2em;
+        }
+    }
+
+    .contact {
+
+        &__box {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        &__title {
+            font-size: 3.6rem;
+        }
+    }
+    
+    .info {
+    
+        &__box {
+            max-width: 450px;
+            margin-bottom: 4em;
+            padding-left: 4em;
+        }
+
+        &__item {
+            display: flex;
+        }
+
+        &__text span {
+            margin-left: .5em;
         }
     }
 }

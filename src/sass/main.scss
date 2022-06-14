@@ -69,12 +69,13 @@ body {
 .scroll-to-top-btn {
 	display: none;
 	position: fixed;
-	bottom: 15px;
+	bottom: 20px;
 	right: 20px;
 	padding: 0.2em 0.4em;
 	color: $black;
 	border-radius: 50%;
 	font-size: 3rem;
+	cursor: pointer;
 	transition: transform 0.3s;
 
 	&--active {
@@ -83,12 +84,8 @@ body {
 	}
 
 	&:hover {
-		transform: scale(.9);
+		transform: scale(0.9);
 	}
-}
-
-section:nth-child(even) {
-	background-color: $primary-light;
 }
 
 // NAV
@@ -264,7 +261,7 @@ section:nth-child(even) {
 			text-decoration: none;
 			color: $black;
 			font-weight: bold;
-			transition: color .3s;
+			transition: color 0.3s;
 			cursor: pointer;
 
 			&::before {
@@ -275,7 +272,7 @@ section:nth-child(even) {
 				height: 2px;
 				width: 105%;
 				background-color: $secondary;
-				transition: height .3s;
+				transition: height 0.3s;
 				z-index: -1;
 			}
 
@@ -290,13 +287,57 @@ section:nth-child(even) {
 	}
 
 	&__item .fas {
+		margin-right: 0.5em;
 		color: $secondary;
+	}
+}
+
+// SKILLS
+.skills {
+	position: relative;
+	padding: 0 1.5em;
+	height: 350px;
+	background-image: url('../img/header-img-small.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: 0 70%;
+	color: $white;
+	font-size: 2rem;
+	z-index: 0;
+
+	&__box {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: 100%;
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+
+		&-icon {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 0.5em;
+			margin: 0.5em;
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			border: 2px solid $white;
+		}
+
+		&-text {
+			margin-left: 1em;
+		}
 	}
 }
 
 // OFFER
 .offer {
 	padding: 5em 1.5em;
+	background-color: $primary-light;
 
 	&__item {
 		margin: 4em 0;
@@ -353,6 +394,32 @@ section:nth-child(even) {
 	}
 }
 
+// HELP
+.help {
+	position: relative;
+	padding: 0 1.5em;
+	height: 350px;
+	background-image: url('../img/header-img-small.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	color: $white;
+	z-index: 0;
+
+	&__box {
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__text {
+		padding: 2em 3em;
+		font-size: 2rem;
+		border: 1px solid $white;
+	}
+}
+
 // PORTFOLIO
 .portfolio {
 	padding: 5em 1.5em;
@@ -380,7 +447,7 @@ section:nth-child(even) {
 		&-text {
 			margin: 1em 0 1.5em;
 			color: $dark-gray;
-		} 
+		}
 
 		&-btn {
 			padding: 0.6em 2.5em;
@@ -405,15 +472,43 @@ section:nth-child(even) {
 }
 
 // CONTACT
-.form {
-	margin-bottom: 156px;
+.contact {
 	padding: 4em 1.5em;
+
+	&__box {
+		display: flex;
+		flex-direction: column;
+	}
 
 	&__title {
 		margin-bottom: 0.5em;
-		font-size: 3.6rem;
+		font-size: 2.4rem;
 		color: $primary;
 	}
+}
+
+.info {
+
+	&__box {
+		margin-bottom: 3em;
+	}
+
+	&__text {
+		padding-top: 1.2em;
+		font-size: 1.8rem;
+	}
+
+	&__text span {
+		font-weight: bold;
+	}
+
+	&__text .fas {
+		margin-right: 0.5em;
+		color: $secondary;
+	}
+}
+
+.form {
 
 	&__box form {
 		display: flex;
@@ -466,6 +561,10 @@ section:nth-child(even) {
 	}
 }
 
+.map {
+	margin-bottom: 2.5em;
+}
+
 // ERROR
 .error {
 	display: flex;
@@ -475,7 +574,7 @@ section:nth-child(even) {
 	padding: 1.5em;
 	width: 100vw;
 	height: 100vh;
-	
+
 	&__title {
 		color: $black;
 		font-size: 3rem;
@@ -485,7 +584,7 @@ section:nth-child(even) {
 
 	&__btn {
 		margin-top: 1em;
-		padding: .7em 1.5em;
+		padding: 0.7em 1.5em;
 		color: $white;
 		background-color: $secondary;
 		text-decoration: none;
